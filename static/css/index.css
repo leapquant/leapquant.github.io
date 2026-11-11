@@ -1,0 +1,158 @@
+/* Academic project page style (adapted from the Nerfies project page, CC BY-SA 4.0). */
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.footer .icon-link {
+  font-size: 25px;
+  color: #000;
+}
+
+.link-block a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.title,
+.publication-title {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-title {
+  line-height: 1.25;
+}
+
+.publication-authors {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors a {
+  color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+  text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.eql-cntrb {
+  font-size: smaller;
+}
+
+.publication-links {
+  margin-top: 0.5rem;
+}
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser video {
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+.figure-pull-up {
+  margin-top: -1rem;
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.results-sub {
+  margin-top: 2rem;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-body {
+    padding: 2rem 1rem;
+  }
+
+  .publication-title {
+    font-size: 1.6rem !important;
+  }
+
+  .publication-authors {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    font-size: 0.85rem;
+  }
+}
+
+/* Main accuracy table */
+.results-table-wrap {
+  width: 100%;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+.results-table {
+  margin: 0 auto;
+  font-size: 0.85rem;
+  background: transparent;
+  font-variant-numeric: tabular-nums;
+}
+
+.results-table th,
+.results-table td {
+  text-align: center !important;
+  vertical-align: middle !important;
+  white-space: nowrap;
+}
+
+.results-table th.method,
+.results-table td.method {
+  text-align: left !important;
+}
+
+.results-table thead tr:first-child th {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.results-table .group-row td {
+  font-style: italic;
+  color: #666;
+  background: #f0f0f0;
+  text-align: left !important;
+}
+
+.results-table .baseline-ref td {
+  color: #555;
+}
+
+.results-table tr.ours td {
+  background: #e8f1fb;
+}
+
+.results-table tr.ours td.method {
+  font-weight: 700;
+}
+
+/* Bulma's auto margins disable flex stretch inside .hero; keep containers at viewport width so wide tables scroll instead of overflowing. */
+.hero > .container {
+  width: 100%;
+}
+
+/* Center figures narrower than their container (Bulma's .image img is display:block with no auto margins). */
+.image img {
+  margin-left: auto;
+  margin-right: auto;
+}
